@@ -16,7 +16,21 @@ div {
     margin: 3em auto;
     text-align: center;
     width: 50%;
+    overflow: hidden;
 }
+
+audio {
+  width:400px;
+     position: fixed;
+    top: 220px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+margin-left:auto;
+    margin-right:auto;
+}
+
+
 
 button {
     display: inline-block;
@@ -41,9 +55,7 @@ MEDIA QUERIES
 @media screen and (min-width: 20em) { 
 
   /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
+
   }
   
 }
@@ -51,41 +63,23 @@ MEDIA QUERIES
 /* Tablet:  768px = 160em */
 @media screen and (min-width: 48em)  {
 
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
+
 
 }
 
 /* Desktop: 1280px = 80em */
 @media screen and (min-width: 80em) { 
   
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
-
 }
 
 /* Stage */
 
 #stage {
-    background: yellow;
-    height: 300px;
-    width: 600px;
-}
-
-#stage #star {
-    height: 100px;
-    width: 100px;
-}
-
-  #stage {
-    width: 60%;
-    margin: 0 auto;
+    background: white;
+     width: 40%;
+    margin: 0 auto 1;
+    
+    
   }
   /*call animation */
   
