@@ -2,7 +2,7 @@
 
 ## Brainstorm Ideas
 
-              My topic is about fitness. I want to incorporate the word Google into things that deal with  working out, eating healthy, and measuring progress. My idea is to have upbeat music that will motivate you to want to get moving, start pumping weights or do some hardcore cardio. I am planning to draw out the text into shapes of things that go with my theme. I found some fun fonts that would like try out called Alpha fitness. It shaped like a woman doing different yoga and weightlifting poses in the shape of the whole alphabet. 
+        //*      My topic is about fitness. I want to incorporate the word Google into things that deal with  working out, eating healthy, and measuring progress. My idea is to have upbeat music that will motivate you to want to get moving, start pumping weights or do some hardcore cardio. I am planning to draw out the text into shapes of things that go with my theme. I found some fun fonts that would like try out called Alpha fitness. It shaped like a woman doing different yoga and weightlifting poses in the shape of the whole alphabet. 
 
              I want to do fitness because right now I am all about getting sweaty, pumping weights, and eating healthy. My goals are to grow a booty, slim down my waist, and have toned arms. Best way to get there is to make no excuses, make workouts fun, have yummy-nutritious food to grub on so I don’t get tempted by junkfood.
 
