@@ -22,10 +22,11 @@ div {
 audio {
 width:50%;
 padding-top: 60px;
+    padding-bottom: 5px;
 display: block;
 	margin-left: auto;
 	margin-right: auto;
-    margin-bottom: -1px
+    margin-bottom: 15px
     
 
 }
@@ -75,169 +76,191 @@ MEDIA QUERIES
 /* Stage */
 
 #stage {
-    background: white;
-     width: 40%;
-    margin: 0 auto 1;
-    
-    
-  }
-  /*call animation */
-  
-  .tape {
-    animation: grow 1s ease-Out infinite;
-  }
-  /*create animation*/
-  
-  @keyframes grow {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  /*spokes*/
-  
-  .st8 {
-    transform-origin: 50% 50%;
-    animation: spin 2s infinite linear;
-  }
-  
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  /*sweat*/
-  
-  .drop {
-    animation: sweat 1s infinite ease-out;
-  }
-  
-  @keyframes sweat {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.2;
-      transform: translate(0, 100px);
-    }
-  }
-  
-  .shakeo {
-    fill: #602424;
-    stroke-width: 4;
-    y: 50;
-    animation: shake 1s infinite;
-  }
-  
-  .lid {
-    stroke-width: 4;
-    animation: shake 1s infinite;
-  }
-  
-  @keyframes shake {
-    15% {
-      transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-    }
-    30% {
-      transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-    }
-    18.5% {
-      transform: translateX(5px) rotateY(7deg);
-    }
-    30% {
-      transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-    }
-    45% {
-      transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-    }
-    60% {
-      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-    }
-  }
-  /*apple*/
-  
-  .st13 {
-    fill: #EA1827;
-    animation: bounce 1s infinite;
-  }
-  
-  .st14,
-  .st15 {
-    animation: bounce 1s infinite;
-  }
-  
-  @keyframes bounce {
-    from,
-    20%,
-    53%,
-    80%,
-    to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-    40%,
-    43% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-      -webkit-transform: translate3d(0, -30px, 0);
-      transform: translate3d(0, -30px, 0);
-    }
-    70% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-      -webkit-transform: translate3d(0, -15px, 0);
-      transform: translate3d(0, -15px, 0);
-    }
-    90% {
-      -webkit-transform: translate3d(0, -4px, 0);
-      transform: translate3d(0, -4px, 0);
-    }
-  }
-  
-  .bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
-  
-  .arm {
-    fill: none;
-    stroke: black;
-    stroke-width: 9;
-    animation: rotateInDownRight 2s infinite;
-    
-  }
-  
-  .st0 {
+  width: 60%;
+  margin: 0 auto;
+}
 
-    animation: rotateInDownRight 2s infinite;
+
+/*call animation */
+
+.tape {
+  animation: grow .5s ease-Out infinite;
+}
+
+
+/*create animation*/
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
   }
- @keyframes rotateInDownRight {
-  from {
- 
-    transform-origin: right bottom;
-      transform: rotate3d(0, 0, 1, 45deg);
-
+  20% {
+    transform: scale(1.1);
   }
-
-  to {
-
-    transform-origin: right bottom;
-    transform: none;
-    
+  100% {
+    transform: scale(1);
   }
 }
 
+
+/*spokes*/
+
+.st8 {
+  transform-origin: 50% 50%;
+  animation: spin .5s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*sweat*/
+
+.sweat {
+  animation: drop 0.75s linear infinite;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
+}
+
+.shakeo {
+  fill: #602424;
+  stroke-width: 4;
+  y: 50;
+  animation: shake .7s infinite;
+}
+
+.lid {
+  stroke-width: 4;
+  animation: shake .7s infinite;
+}
+
+@keyframes shake {
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+}
+
+
+/*apple*/
+
+.st13 {
+  fill: #EA1827;
+  animation: bounce .5s infinite;
+}
+
+.st14,
+.st15 {
+  animation: bounce .5s infinite;
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+       transform: translate3d(0, 5, 0);
+  }
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+       transform: translate3d(0, -4px, 0);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+.arm {
+  
+  fill: none;
+  stroke: black;
+  stroke-width: 9;
+  animation: rotateInDownRight 1s infinite;
+  
+  
+}
+
+
+/* Weight */
+
+.weight {
+  animation: weightLift 1s infinite;
+}
+
+@keyframes weightLift {
+  3% {
+    transform-origin: right bottom;
+    transform: none;
+  }
+  50% {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 2, 28deg);
+  }
+  100% {
+    transform-origin: right bottom;
+    transform: none;
+  }
+}
+
+
+/* Arm pumping */
+
+@keyframes rotateInDownRight {
+  0% {
+    transform-origin: right bottom;
+    transform: none;
+  }
+  50% {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 6, 15deg);
+  }
+  100% {
+    transform-origin: right bottom;
+    transform: none;
+  }
+}
 /* DO NOT EDIT BELOW THIS LINE */
 
