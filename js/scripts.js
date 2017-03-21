@@ -1,5 +1,9 @@
 // YOUR SCRIPTS GO HERE
 
+$(function() {
+    alert("hello?");
+});
+
 <script src="jquery.drawsvg.js"></script>
 var img0 = '../img/400.jpg';
 var img1 = '../img/600.jpg';
